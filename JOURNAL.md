@@ -22,7 +22,7 @@
 
 **1h**
 
-Installed KiCad and was able to design all the schematics for the parts of the PCB by following the guide. Had some difficulty with importing the files from the care package but got there in the end. Even learnt a bit about how KiCad works, so productive session.
+Installed KiCad and was able to design all the schematics for the parts of the PCB by following the guide. Had some difficulty with importing the files from the care package but got there in the end. Even learnt a bit about how KiCad works, so productive session. Also did the footprint assignment which was a bit of hassle yo figure out, got there in the end.
 
 ![Screenshot 2026-10-06 213236](https://halflife.hackclub-assets.com/hackclub-half-life/sessions/WMTdd5FkK91J7XHGcSEOMw2apIH8kfR4/d3637ad79780eea3d7aa7665e5d6e75fcf3322f873a0e4f4f3079dcfc8225443.png)
 
