@@ -1,10 +1,10 @@
 # Starbie (Ghosty)
 PCB week Hack Club Half Life
 Guided Project (Starbie) turned nerdy reference covered tamagotchi like interactable toy.
-
 Started as the Starbie guided project, still mostly that, but with some tweaks.
 
 Component schematics made in KiCad with help from the project guide.
+Schematics in StarbiePCB folder
 <img width="840" height="708" alt="Screenshot 2026-10-10 094332" src="https://github.com/user-attachments/assets/08c55fb0-5d0a-49c3-b900-98cbbc0d7c2f" />
 
 PCB then also edited in KiCad, changed the shape of the PCB to a non-descript triangle shape, routed the traces, and added some things to the board to truly make it my own.
