@@ -14,7 +14,7 @@ Gerber and Drill files are included in GerberAndDrills folder
 <img width="678" height="572" alt="Screenshot 2026-10-10 094358" src="https://github.com/user-attachments/assets/062190e9-e88c-4895-b69c-6059167a682b" />
 <img width="868" height="620" alt="image" src="https://github.com/user-attachments/assets/229c4cdb-19f4-495e-9b36-5adb6cb3230a" />
 
-The Screen, buttons, motion sensor, ESP32 and DHT-11 will be pegged into their places in the PCB once it has been manufactures
+The Screen, buttons, motion sensor, ESP32 and DHT-11 will be pegged into their places in the PCB once it has been manufactured.
 
 Then for the firmware I just used the firmware supplied in the project folder, but to customize it a bit I changed the sprite to a custom made ghost sprite.
 <img width="32" height="32" alt="Ghosty" src="https://github.com/user-attachments/assets/49752fee-e7ff-4834-a178-1d1705534747" />
