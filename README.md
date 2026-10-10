@@ -4,6 +4,8 @@ Guided Project (Starbie) turned nerdy reference covered tamagotchi like interact
 Started as the Starbie guided project, still mostly that, but with some tweaks.
 Built as week 1 project, but also to learn a bit about PCBs and electronics
 
+A tamagotchi style PCB pet that you can interact with by physicially moving the board and by pressing buttons. I used a ghost sprite for the pet, but this can be changed if wanted.
+
 Component schematics made in KiCad with help from the project guide.
 Schematics in StarbiePCB folder (StarbiePCB.kicad_sch.Ick
 ESP32 for processing, 8 and 4 pin for screen and motion sensor and DTH for enviromnent readings and buttons for menu selection
