@@ -20,3 +20,6 @@ The Screen, buttons, motion sensor, ESP32 and DHT-11 will be pegged into their p
 
 Then for the firmware I just used the firmware supplied in the project folder, but to customize it a bit I changed the sprite to a custom made ghost sprite.
 <img width="32" height="32" alt="Ghosty" src="https://github.com/user-attachments/assets/49752fee-e7ff-4834-a178-1d1705534747" />
+Edit this bit array to change the sprite of the pet
+<img width="766" height="196" alt="image" src="https://github.com/user-attachments/assets/bd81f141-3ce2-4d6f-b568-624019df9db2" />
+
