@@ -20,7 +20,7 @@
 | [10k Resistor](https://www.aliexpress.com/item/32315929780.html?spm=a2g0o.cart.0.0.1b0e38dahhNDxg&mp=1&pdp_npi=6%40dis%21GBP%21GBP+0.96%21GBP+0.91%21%21GBP+0.91%21%21%21%4021038a9c17917174128813022e0feb%2158256489987%21ct%21UK%218517798624%21%211%210%21) | reduce current through screen | 1 | $1.20 | $1.20 | [AliExpress](https://www.aliexpress.com/item/32315929780.html?spm=a2g0o.cart.0.0.1b0e38dahhNDxg&mp=1&pdp_npi=6%40dis%21GBP%21GBP+0.96%21GBP+0.91%21%21GBP+0.91%21%21%21%4021038a9c17917174128813022e0feb%2158256489987%21ct%21UK%218517798624%21%211%210%21) |
 | [PCB](https://cart.jlcpcb.com/quote) | the actual board | 1 | $9.90 | $9.90 | [JLCPCB](https://cart.jlcpcb.com/quote) |
 | **Parts subtotal** | — | — | — | **$16.81** | — |
-| **Tax & shipping** | — | — | — | **$0.00** | — |
-| **Total** | — | — | — | **$16.81** | — |
+| **Tax & shipping** | — | — | — | **$14.57** | — |
+| **Total** | — | — | — | **$31.38** | — |
 
-$13.19 left of the tier's funding.
+**$1.38 over the tier's funding.** Every tier gives a fixed amount for parts, so this needs cutting back or a higher tier.
