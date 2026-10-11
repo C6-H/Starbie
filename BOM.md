@@ -20,7 +20,7 @@
 | [10k Resistor](https://thepihut.com/products/through-hole-resistors-10k-ohm-5-1-4w-pack-of-25?variant=27740110993&country=GB&currency=GBP&utm_medium=product_sync&utm_source=google&utm_content=sag_organic&utm_campaign=sag_organic&srsltid=AU7gw4WHrW8HyinEnSWBIYk_vYy9prJ0dNvAzDXfPVacQNIqGWZbYrGTBgc) | reduce current through screen | 1 | $1.06 | $1.06 | [The Pi hut](https://thepihut.com/products/through-hole-resistors-10k-ohm-5-1-4w-pack-of-25?variant=27740110993&country=GB&currency=GBP&utm_medium=product_sync&utm_source=google&utm_content=sag_organic&utm_campaign=sag_organic&srsltid=AU7gw4WHrW8HyinEnSWBIYk_vYy9prJ0dNvAzDXfPVacQNIqGWZbYrGTBgc) |
 | [PCB](https://cart.jlcpcb.com/quote) | the actual board | 1 | $9.90 | $9.90 | [JLCPCB](https://cart.jlcpcb.com/quote) |
 | **Parts subtotal** | — | — | — | **$28.85** | — |
-| **Tax & shipping** | — | — | — | **$5.81** | — |
-| **Total** | — | — | — | **$34.66** | — |
+| **Tax & shipping** | — | — | — | **$0.00** | — |
+| **Total** | — | — | — | **$28.85** | — |
 
-**$4.66 over the tier's funding.** Every tier gives a fixed amount for parts, so this needs cutting back or a higher tier.
+$1.15 left of the tier's funding.
