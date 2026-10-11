@@ -42,6 +42,7 @@ const uint8_t MPU6050_ADDRESS = 0x68;
 // --- Starting stats -------------------------------------------------------
 // Stats are 0 to 100. They only change when you select an action or shake
 // Starbie; nothing slowly drains while it sits on your desk.
+
 const int STARTING_JOY = 70;
 const int STARTING_ENERGY = 75;
 const int STARTING_FULLNESS = 65;
@@ -173,6 +174,7 @@ ButtonState buttonOne = {BUTTON_ONE_PIN, HIGH, HIGH, 0};
 ButtonState buttonTwo = {BUTTON_TWO_PIN, HIGH, HIGH, 0};
 View currentView = PET_VIEW;
 
+bool shaking = false;
 bool mpuFound = false;
 bool dhtFound = false;
 float accelerationX = 0.0f;
@@ -363,6 +365,10 @@ void checkForShake() {
     shakeAnimationEndsAt = now + 350;
     changePet(SHAKE_JOY_CHANGE, SHAKE_ENERGY_CHANGE, SHAKE_FULLNESS_CHANGE);
     savePet();
+    shaking = true;
+  }
+  else {
+    shaking = false;
   }
 }
 
@@ -422,6 +428,21 @@ void handleButtons() {
   }
 }
 
+void drawAnger(int x, int y) {
+  display.drawPixel(x - 1, y - 2, SSD1306_WHITE);
+  display.drawPixel(x + 1, y - 2, SSD1306_WHITE);
+  display.drawPixel(x - 2, y - 1, SSD1306_WHITE);
+  display.drawPixel(x - 1, y - 1, SSD1306_WHITE);
+  display.drawPixel(x + 1, y - 1, SSD1306_WHITE);
+  display.drawPixel(x + 2, y - 1, SSD1306_WHITE);
+  display.drawPixel(x - 2, y + 1, SSD1306_WHITE);
+  display.drawPixel(x - 1, y + 1, SSD1306_WHITE);
+  display.drawPixel(x + 1, y + 1, SSD1306_WHITE);
+  display.drawPixel(x + 2, y + 1, SSD1306_WHITE);
+  display.drawPixel(x - 1, y + 2, SSD1306_WHITE);
+  display.drawPixel(x + 1, y + 2, SSD1306_WHITE);
+}
+
 void drawSparkle(int x, int y) {
   display.drawPixel(x, y - 2, SSD1306_WHITE);
   display.drawPixel(x - 1, y - 1, SSD1306_WHITE);
@@ -434,6 +455,27 @@ void drawSparkle(int x, int y) {
   display.drawPixel(x, y + 2, SSD1306_WHITE);
 }
 
+void drawDizzy(int x, int y) {
+  display.drawPixel(x - 4, y - 4, SSD1306_WHITE);
+  display.drawPixel(x - 3, y - 4, SSD1306_WHITE);
+  display.drawPixel(x - 2, y - 4, SSD1306_WHITE);
+  display.drawPixel(x - 5, y - 3, SSD1306_WHITE);
+  display.drawPixel(x - 1, y - 3, SSD1306_WHITE);
+  display.drawPixel(x - 6, y - 2, SSD1306_WHITE);
+  display.drawPixel(x - 3, y - 2, SSD1306_WHITE);
+  display.drawPixel(x, y - 2, SSD1306_WHITE);
+  display.drawPixel(x - 6, y - 1, SSD1306_WHITE);
+  display.drawPixel(x - 4, y - 1, SSD1306_WHITE);
+  display.drawPixel(x - 2, y - 1, SSD1306_WHITE);
+  display.drawPixel(x, y - 1, SSD1306_WHITE);
+  display.drawPixel(x - 6, y, SSD1306_WHITE);
+  display.drawPixel(x - 2, y, SSD1306_WHITE);
+  display.drawPixel(x, y, SSD1306_WHITE);
+  display.drawPixel(x - 5, y + 1, SSD1306_WHITE);
+  display.drawPixel(x - 2, y + 1, SSD1306_WHITE);
+  display.drawPixel(x - 4, y + 2, SSD1306_WHITE);
+  display.drawPixel(x - 3, y + 2, SSD1306_WHITE);
+}
 void drawHeart(int x, int y) {
   // A tiny seven-pixel-wide heart that stays crisp on the OLED.
   display.fillRect(x - 2, y, 2, 2, SSD1306_WHITE);
@@ -496,16 +538,25 @@ void drawPet() {
     }
   }
 
+
   petX = constrain(petX, 0, SCREEN_WIDTH - PET_SPRITE_WIDTH);
   display.drawBitmap(petX, petY, PET_SPRITE, PET_SPRITE_WIDTH, PET_SPRITE_HEIGHT,
                      SSD1306_WHITE);
   
   if (!isNapping() && (now / 250) % 2 == 0) {
   drawSparkle(petX - 4, petY + 18);
-}
+  }
+
+  if (((pet.joy == 0) || (pet.fullness == 0) || (pet.energy == 0)) && !isNapping()) {
+  drawAnger(petX - 4, petY + 18);
+  }
 
   if (isNapping()) {
     drawSleepZs(now, petX, petY);
+  }
+
+  if (shaking) {
+    drawDizzy(petX - 4, petY + 18);
   }
   drawHearts(now, petX, petY);
 }
